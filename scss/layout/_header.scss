@@ -62,14 +62,23 @@
 
 .header__contacts {
   @extend %reset-list;
-  display: flex;
+
   gap: 50px;
 
   &-item {
     color: var(--dark-txt-cl);
   }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
+    display: flex;
   }
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     flex-direction: column;
