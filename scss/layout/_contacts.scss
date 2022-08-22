@@ -1,0 +1,31 @@
+.contacts__list {
+  @extend %reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contacts__link {
+  @extend %reset-link;
+}
+
+.contacts__address {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--btn-txt-cl);
+}
+.contacts__mail,
+.contacts__phone {
+  @extend %reset-link;
+  color: rgba(255, 255, 255, 0.6);
+  transition: var(--anim-fast);
+
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}
