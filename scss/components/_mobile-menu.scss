@@ -26,9 +26,18 @@
     0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 .menu-container {
+  display: flex;
+  flex-direction: column;
+
   margin-left: auto;
   max-width: 337px;
   height: 100%;
   background-color: #ffffff;
   padding: 118px 40px;
+}
+.mobile-list:first-child {
+  margin-bottom: auto;
+}
+.mobile-list {
+  @extend %reset-list;
 }

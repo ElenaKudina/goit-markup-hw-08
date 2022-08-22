@@ -22,7 +22,7 @@
   color: currentColor;
 }
 
-.contacts__list, .socials, .clients__pic-list, .project__container, .portfolio__filters, .portfolio-list, .team__container, .feature-list, .nav__list, .header__contacts {
+.contacts__list, .socials, .clients__pic-list, .project__container, .portfolio__filters, .portfolio-list, .team__container, .feature-list, .nav__list, .header__contacts, .mobile-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -531,11 +531,22 @@ p {
 }
 
 .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: auto;
   max-width: 337px;
   height: 100%;
   background-color: #ffffff;
   padding: 118px 40px;
+}
+
+.mobile-list:first-child {
+  margin-bottom: auto;
 }
 
 /**
