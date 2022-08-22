@@ -30,7 +30,7 @@
   flex-direction: column;
 
   margin-left: auto;
-  max-width: 337px;
+  max-width: 480px;
   height: 100%;
   background-color: #ffffff;
   padding: 118px 40px;
@@ -38,13 +38,35 @@
 .mobile-list:first-child {
   margin-bottom: auto;
 }
+.mobile-list:nth-child(2) {
+  margin-bottom: 40px;
+}
 .mobile-list {
   @extend %reset-list;
 }
 .mobile__link {
+  @extend %reset-link;
   font-weight: 500;
   font-size: 40px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
+  }
+}
+.mobile-socials {
+  @extend %reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mobile-socials-link {
+  display: flex;
+
+  .mobile-socials-item:not(:last-child) &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    margin-left: 10px;
+
+    background-color: rgba(33, 33, 33, 0.2);
   }
 }
