@@ -632,6 +632,12 @@ img {
   | block 4
   |============================
 */
+.header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+  background-color: var(--btn-txt-cl);
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,6 +756,9 @@ img {
 
 .nav {
   margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__list {
