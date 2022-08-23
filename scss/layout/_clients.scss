@@ -1,6 +1,10 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   /* background-color: var(--btn-txt-cl); */
 }
 /* .clients-pic {
@@ -9,7 +13,11 @@
 } */
 .clients__pic-list {
   @extend %reset-list;
-  display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   justify-content: space-between;
 }
 /* .clients-pic-item {
