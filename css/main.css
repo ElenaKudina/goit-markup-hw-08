@@ -496,6 +496,7 @@ p {
 }
 
 .menu-btn {
+  margin-left: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -507,9 +508,15 @@ p {
           justify-content: center;
   width: 40px;
   height: 40px;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
 }
 
 .menu-overlay {
